@@ -1,0 +1,24 @@
+.bg-dark-gradient {
+  background-image: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.8)
+  );
+}
+
+.img-cover {
+  object-fit: cover;
+}
+
+.hover-effect {
+  color: white;
+  &:hover {
+    color: $primary;
+  }
+}
+
+.bg-cover {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

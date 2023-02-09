@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="" zh-Tw>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/794bb4a436.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="./css/all.css" />
+    <title>Document</title>
+    <!-- <style>
+      .bg-dark-gradient {
+        background-image: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0),
+          rgba(0, 0, 0, 0.8)
+        );
+      }
+
+      .bg-attachment-fixed {
+        background-attachment: fixed;
+      }
+
+      .img-cover {
+        object-fit: cover;
+      }
+
+      .hover-effect {
+        color: white;
+      }
+
+      .hover-effect:hover {
+        color: #ff4066;
+      }
+      .bg-cover {
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    </style> -->
+  </head>
+  <body>
+    <!-- <div class="btn btn-primary">iojg;</div> -->
+
+    <header class="min-vh-100 position-relative mb-5">
+      <div
+        class="bg-secondary position-absolute top-0 start-0"
+        style="height: 240px; width: 240px"
+      ></div>
+      <div
+        class="bg-primary position-absolute bottom-0 end-0"
+        style="height: 240px; width: 240px"
+      ></div>
+
+      <div
+        class="bg-dark position-absolute bg-cover bg-attachment-fixed"
+        style="
+          top: 30px;
+          bottom: 30px;
+          left: 30px;
+          right: 30px;
+          background-image: url(https://images.unsplash.com/photo-1500989145603-8e7ef71d639e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=876&q=80);
+        "
+      ></div>
+
+      <p class="h2 text-white fw-bold position-absolute top-30 start-10">
+        學習無限可能 遇見更好的自己
+      </p>
+    </header>
+
+    <div class="container mb-5">
+      <div class="row gy-3 justify-content-center flex-md-row-reverse">
+        <div class="col-md-4">
+          <img
+            class="img-cover w-100"
+            height="500px"
+            src="https://images.unsplash.com/photo-1520310809185-5cc119cf8b08?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+            alt=""
+          />
+        </div>
+        <div class="col-md-5 d-flex flex-column justify-content-center">
+          <!-- <div class="text"> -->
+          <h2>關於我...</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum
+            consequatur laborum voluptatem, expedita odit iusto obcaecati
+            consectetur enim dolor quam?
+          </p>
+          <a href="" class="btn btn-outline-primary"
+            >read more about my story...</a
+          >
+          <!-- </div> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-light py-5 m-md-5">
+      <div class="container">
+        <h2 class="display-5 text-dark text-center mb-4">冒險故事</h2>
+        <div class="row row-cols-1 row-cols-md-3 gy-3">
+          <div class="col">
+            <div
+              class="card text-white border border-bottom-0 border-top-0 border-end-0 border-secondary border-10"
+            >
+              <img
+                class="card-img"
+                src="https://images.unsplash.com/photo-1506477331477-33d5d8b3dc85?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=434&q=80"
+                height="400px"
+                alt=""
+                srcset=""
+              />
+              <div class="card-img-overlay bg-dark-gradient">
+                <div class="d-flex flex-column h-100 justify-content-end">
+                  <h5 class="card-title">story 1</h5>
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                  <p class="card-text">Last updated 3 mins ago</p>
+
+                  <a
+                    href=""
+                    class="btn btn-outline-primary border-top-0 border-start-0 w-100 stretched-link"
+                  >
+                    read more
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="card text-white border border-bottom-0 border-top-0 border-end-0 border-secondary border-10"
+            >
+              <img
+                class="card-img"
+                src="https://images.unsplash.com/photo-1497290756760-23ac55edf36f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                height="400px"
+                alt=""
+                srcset=""
+              />
+              <div class="card-img-overlay bg-dark-gradient">
+                <div class="d-flex flex-column h-100 justify-content-end">
+                  <h5 class="card-title">story 2</h5>
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                  <p class="card-text">Last updated 3 mins ago</p>
+                  <a
+                    href=""
+                    class="btn btn-outline-primary w-100 border-top-0 border-start-0 stretched-link"
+                  >
+                    read more
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="card text-white border border-bottom-0 border-top-0 border-end-0 border-secondary border-10"
+            >
+              <img
+                class="card-img"
+                src="https://images.unsplash.com/photo-1503177847378-d2048487fa46?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=800"
+                height="400px"
+                alt=""
+                srcset=""
+              />
+              <div class="card-img-overlay bg-dark-gradient">
+                <div class="d-flex flex-column h-100 justify-content-end">
+                  <h5 class="card-title">story 3</h5>
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                  <p class="card-text">Last updated 3 mins ago</p>
+                  <a
+                    href=""
+                    class="btn btn-outline-primary w-100 border-top-0 border-start-0 stretched-link"
+                  >
+                    read more
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer bg-dark text-white p-5">
+      <div class="container">
+        <h3 class="text-center mb-5">Content Us</h3>
+        <div class="row row-cols-1 gy-5 row-cols-md-2">
+          <div
+            class="col d-flex flex-column justify-content-center align-items-center"
+          >
+            <!-- <div class="d-flex flex-column justify-content-center ali"> -->
+            <h4>聯絡方式</h4>
+            <p class="mb-0">
+              <i class="fa-solid fa-phone me-2"></i>02-XXXX-XXXX
+            </p>
+            <a href="#" class="link-light text-decoration-none">
+              <i class="fa-regular fa-envelope me-2"></i>123@test.com
+            </a>
+
+            <h4 class="mt-5 mb-3">關注我們</h4>
+            <div class="d-flex justify-content-center">
+              <a href="" class="me-3 link-light"
+                ><i class="fa-brands fa-instagram fa-2xl hover-effect"></i></a
+              ><a href="" class="me-3 link-light"
+                ><i class="fa-brands fa-facebook fa-2xl hover-effect"></i></a
+              ><a href="" class="link-light"
+                ><i class="fa-brands fa-twitter fa-2xl hover-effect"></i
+              ></a>
+            </div>
+            <!-- </div> -->
+          </div>
+          <div class="col">
+            <form action="" class="needs-validation" novalidate>
+              <div class="row gy-3 gx-2">
+                <div class="col-md-6">
+                  <label for="lastNeme" class="form-label">姓氏</label>
+                  <input
+                    id="lastNeme"
+                    type="text"
+                    class="form-control"
+                    required
+                  />
+                  <span class="invalid-feedback"> 此欄必填 </span>
+                  <span class="valid-feedback"> </span>
+                </div>
+                <div class="col-md-6">
+                  <label for="firstName" class="form-label">名字</label>
+                  <input
+                    id="firstName"
+                    type="text"
+                    class="form-control"
+                    required
+                  />
+                  <span class="invalid-feedback"> 此欄必填 </span>
+                  <span class="valid-feedback"> </span>
+                </div>
+
+                <div class="col-12">
+                  <label for="phone" class="form-label">電話</label>
+                  <input id="phone" type="tel" class="form-control" required />
+                  <span class="invalid-feedback"> 此欄必填 </span>
+                  <span class="valid-feedback"> </span>
+                </div>
+                <div class="col-12">
+                  <label for="" class="form-label">Email</label>
+                  <input type="email" class="form-control" required />
+                  <span class="invalid-feedback"> 請填寫正確的 email </span>
+                  <span class="valid-feedback"> </span>
+                </div>
+
+                <div class="col-12">
+                  <label for="message" class="form-label">留言</label>
+                  <textarea
+                    class="form-control"
+                    name=""
+                    id="message"
+                    required
+                  ></textarea>
+                  <span class="invalid-feedback"> 此欄必填 </span>
+                  <span class="valid-feedback"> </span>
+                </div>
+
+                <div class="col-12 d-flex justify-content-end">
+                  <button class="btn btn-outline-primary" type="submit">
+                    送出
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      (function () {
+        "use strict";
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        const forms = document.querySelectorAll(".needs-validation");
+
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms).forEach(function (form) {
+          form.addEventListener(
+            "submit",
+            function (event) {
+              if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+
+              form.classList.add("was-validated");
+            },
+            false
+          );
+        });
+      })();
+    </script>
+  </body>
+</html>
