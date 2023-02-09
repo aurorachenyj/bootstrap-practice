@@ -12,6 +12,24 @@
 
     <link rel="stylesheet" href="./css/all.css" />
     <title>Document</title>
+
+    <style>
+      .img-hover-enlarge {
+        transition: all 0.3 ease;
+      }
+
+      .img-hover-enlarge:hover {
+        transform: scale(1.3);
+      }
+
+      .img-hover-tranlate-top {
+        transition: all 0.3 ease;
+      }
+      .img-hover-tranlate-top:hover {
+        transform: translateY(-5px);
+      }
+    </style>
+
     <!-- <style>
       .bg-dark-gradient {
         background-image: linear-gradient(
@@ -75,12 +93,14 @@
     <div class="container mb-5">
       <div class="row gy-3 justify-content-center flex-md-row-reverse">
         <div class="col-md-4">
-          <img
-            class="img-cover w-100"
-            height="500px"
-            src="https://images.unsplash.com/photo-1520310809185-5cc119cf8b08?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
-            alt=""
-          />
+          <div class="overflow-hidden">
+            <img
+              class="img-cover w-100 img-hover-enlarge"
+              height="500px"
+              src="https://images.unsplash.com/photo-1520310809185-5cc119cf8b08?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+              alt=""
+            />
+          </div>
         </div>
         <div class="col-md-5 d-flex flex-column justify-content-center">
           <!-- <div class="text"> -->
@@ -90,7 +110,7 @@
             consequatur laborum voluptatem, expedita odit iusto obcaecati
             consectetur enim dolor quam?
           </p>
-          <a href="" class="btn btn-outline-primary"
+          <a href="" class="btn btn-outline-primary stretched-link"
             >read more about my story...</a
           >
           <!-- </div> -->
@@ -107,15 +127,18 @@
               class="card text-white border border-bottom-0 border-top-0 border-end-0 border-secondary border-10"
             >
               <img
-                class="card-img"
+                class="card-img img-hover-enlarge"
                 src="https://images.unsplash.com/photo-1506477331477-33d5d8b3dc85?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=434&q=80"
                 height="400px"
                 alt=""
                 srcset=""
               />
-              <div class="card-img-overlay bg-dark-gradient">
+
+              <div
+                class="card-img-overlay bg-dark-gradient img-hover-tranlate-top"
+              >
                 <div class="d-flex flex-column h-100 justify-content-end">
-                  <h5 class="card-title">story 1</h5>
+                  <h5 class="card-title mb-auto fw-bold">story 1</h5>
                   <p class="card-text">
                     This is a wider card with supporting text below as a natural
                     lead-in to additional content. This content is a little bit
@@ -144,9 +167,11 @@
                 alt=""
                 srcset=""
               />
-              <div class="card-img-overlay bg-dark-gradient">
+              <div
+                class="card-img-overlay bg-dark-gradient img-hover-tranlate-top"
+              >
                 <div class="d-flex flex-column h-100 justify-content-end">
-                  <h5 class="card-title">story 2</h5>
+                  <h5 class="card-title mb-auto fw-bold">story 2</h5>
                   <p class="card-text">
                     This is a wider card with supporting text below as a natural
                     lead-in to additional content. This content is a little bit
@@ -174,9 +199,11 @@
                 alt=""
                 srcset=""
               />
-              <div class="card-img-overlay bg-dark-gradient">
+              <div
+                class="card-img-overlay bg-dark-gradient img-hover-tranlate-top"
+              >
                 <div class="d-flex flex-column h-100 justify-content-end">
-                  <h5 class="card-title">story 3</h5>
+                  <h5 class="card-title mb-auto fw-bold">story 3</h5>
                   <p class="card-text">
                     This is a wider card with supporting text below as a natural
                     lead-in to additional content. This content is a little bit
