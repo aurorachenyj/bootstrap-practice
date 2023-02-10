@@ -10471,6 +10471,12 @@ textarea.form-control-lg {
      object-fit: cover;
 }
 
+.bg-cover {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .hover-effect {
   color: white;
 }
@@ -10478,8 +10484,20 @@ textarea.form-control-lg {
   color: #ff4066;
 }
 
-.bg-cover {
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
+.img-hover-enlarge {
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+}
+.img-hover-enlarge:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.img-hover-tranlate-top {
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+}
+.img-hover-tranlate-top:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
 }/*# sourceMappingURL=all.css.map */

@@ -12,58 +12,16 @@
 
     <link rel="stylesheet" href="./css/all.css" />
     <title>Document</title>
-
-    <style>
-      .img-hover-enlarge {
-        transition: all 0.3 ease;
-      }
-
-      .img-hover-enlarge:hover {
-        transform: scale(1.3);
-      }
-
-      .img-hover-tranlate-top {
-        transition: all 0.3 ease;
-      }
-      .img-hover-tranlate-top:hover {
-        transform: translateY(-5px);
-      }
-    </style>
-
-    <!-- <style>
-      .bg-dark-gradient {
-        background-image: linear-gradient(
-          180deg,
-          rgba(0, 0, 0, 0),
-          rgba(0, 0, 0, 0.8)
-        );
-      }
-
-      .bg-attachment-fixed {
-        background-attachment: fixed;
-      }
-
-      .img-cover {
-        object-fit: cover;
-      }
-
-      .hover-effect {
-        color: white;
-      }
-
-      .hover-effect:hover {
-        color: #ff4066;
-      }
-      .bg-cover {
-        background-position: center center;
-        background-size: cover;
-        background-repeat: no-repeat;
-      }
-    </style> -->
   </head>
-  <body>
-    <!-- <div class="btn btn-primary">iojg;</div> -->
 
+  <body>
+    <a
+      href="#"
+      class="position-fixed d-none jsTopBtn"
+      style="bottom: 2rem; right: 1rem"
+    >
+      <i class="fa-solid fa-square-caret-up fa-2xl"></i>
+    </a>
     <header class="min-vh-100 position-relative mb-5">
       <div
         class="bg-secondary position-absolute top-0 start-0"
@@ -85,9 +43,44 @@
         "
       ></div>
 
-      <p class="h2 text-white fw-bold position-absolute top-30 start-10">
-        學習無限可能 遇見更好的自己
-      </p>
+      <div class="position-absolute top-30 start-10">
+        <p class="h2 text-white fw-bold">學習無限可能 遇見更好的自己</p>
+
+        <div class="input-group">
+          <div class="dropdown">
+            <button
+              class="btn btn-outline-primary dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton2"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              探索
+            </button>
+            <ul
+              class="dropdown-menu dropdown-menu-light"
+              aria-labelledby="dropdownMenuButton2"
+            >
+              <li><a class="dropdown-item active" href="#">語言</a></li>
+              <li><a class="dropdown-item" href="#">藝術</a></li>
+              <li><a class="dropdown-item" href="#">商業</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">投資理財</a></li>
+            </ul>
+          </div>
+
+          <input
+            type="text"
+            id="form1"
+            class="form-control"
+            placeholder="想學什麼呢？"
+          />
+
+          <button type="button" class="btn btn-primary">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </div>
     </header>
 
     <div class="container mb-5">
@@ -110,7 +103,7 @@
             consequatur laborum voluptatem, expedita odit iusto obcaecati
             consectetur enim dolor quam?
           </p>
-          <a href="" class="btn btn-outline-primary stretched-link"
+          <a href="" class="btn btn-outline-primary"
             >read more about my story...</a
           >
           <!-- </div> -->
@@ -127,7 +120,7 @@
               class="card text-white border border-bottom-0 border-top-0 border-end-0 border-secondary border-10"
             >
               <img
-                class="card-img img-hover-enlarge"
+                class="card-img"
                 src="https://images.unsplash.com/photo-1506477331477-33d5d8b3dc85?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=434&q=80"
                 height="400px"
                 alt=""
@@ -312,32 +305,60 @@
             </form>
           </div>
         </div>
+
+        <div class="row mt-5">
+          <div class="col-12">
+            <p class="text-center mb-0">©2023 All rights reserved.</p>
+          </div>
+        </div>
       </div>
     </footer>
 
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+      crossorigin="anonymous"
+    ></script>
+
     <script>
-      (function () {
-        "use strict";
+      // dropdown js
+      const dropdownElementList = [].slice.call(
+        document.querySelectorAll(".dropdown-toggle")
+      );
+      const dropdownList = dropdownElementList.map(function (dropdownToggleEl) {
+        return new bootstrap.Dropdown(dropdownToggleEl);
+      });
 
-        // Fetch all the forms we want to apply custom Bootstrap validation styles to
-        const forms = document.querySelectorAll(".needs-validation");
+      const jsTopBtn = document.querySelector(".jsTopBtn");
+      // console.log(jsTopBtn);
 
-        // Loop over them and prevent submission
-        Array.prototype.slice.call(forms).forEach(function (form) {
-          form.addEventListener(
-            "submit",
-            function (event) {
-              if (!form.checkValidity()) {
-                event.preventDefault();
-                event.stopPropagation();
-              }
+      window.addEventListener("scroll", (event) => {
+        let scrollY = this.scrollY;
+        if (scrollY > 400) {
+          jsTopBtn.classList.remove("d-none");
+        } else {
+          jsTopBtn.classList.add("d-none");
+        }
+      });
 
-              form.classList.add("was-validated");
-            },
-            false
-          );
-        });
-      })();
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      const forms = document.querySelectorAll(".needs-validation");
+
+      // Loop over them and prevent submission
+      Array.prototype.slice.call(forms).forEach(function (form) {
+        form.addEventListener(
+          "submit",
+          function (event) {
+            if (!form.checkValidity()) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+
+            form.classList.add("was-validated");
+          },
+          false
+        );
+      });
     </script>
   </body>
 </html>
